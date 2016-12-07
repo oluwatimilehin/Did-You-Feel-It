@@ -48,7 +48,7 @@ public final class Utils {
         URL url = createUrl(requestUrl);
 
         // Perform HTTP request to the URL and receive a JSON response back
-        String jsonResponse = null;
+        String jsonResponse = null; //We instantiate it as null due to variable scope in the try block
         try {
             jsonResponse = makeHttpRequest(url);
         } catch (IOException e) {
